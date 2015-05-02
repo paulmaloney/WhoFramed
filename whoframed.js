@@ -3,18 +3,11 @@
 
 // WRAP THE IFRAME
 $( document ).ready(function() {
-	$("iframe").wrap("<div class='ezfit'/>");
-});
-
-// STYLE IT UP
-$(document).ready(function(){
+    $("iframe").wrap("<div class='ezfit'/>");
     $('.ezfit').css('position', 'relative');
     $('.ezfit').css('padding-bottom', '56.25%');
     $('.ezfit').css('padding-top', '25px');
     $('.ezfit').css('height', '0');
-});
-
-$(document).ready(function(){
     $('.ezfit iframe').css('position', 'absolute');
     $('.ezfit iframe').css('top', '0');
     $('.ezfit iframe').css('left', '0');
