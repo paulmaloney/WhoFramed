@@ -1,16 +1,16 @@
-// CSS AND IDEA FROM
-// https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
-
-// WRAP THE IFRAME
-$( document ).ready(function() {
-    $("iframe").wrap("<div class='whoframed'/>");
-    $('.whoframed').css('position', 'relative');
-    $('.whoframed').css('padding-bottom', '56.25%');
-    $('.whoframed').css('padding-top', '25px');
-    $('.whoframed').css('height', '0');
-    $('.whoframed iframe').css('position', 'absolute');
-    $('.whoframed iframe').css('top', '0');
-    $('.whoframed iframe').css('left', '0');
-    $('.whoframed iframe').css('width', '100%');
-    $('.whoframed iframe').css('height', '100%');
+jQuery(document).ready(function( $ ) {
+$('iframe').wrap('<div class="whoframed"/>');
+$('.whoframed').css({
+	'position' : 'relative',
+	'padding-bottom' : '56.25%',
+	'padding-top' : '25px',
+	'height' : '0'
+});
+$('.whoframed iframe').css({
+	'position' : 'absolute',
+	'top' : '0',
+	'left' :'0',
+	'width' : '100%',
+	'height' : '100%'
+});
 });
